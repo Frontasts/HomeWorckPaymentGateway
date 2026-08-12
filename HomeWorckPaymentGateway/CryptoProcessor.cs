@@ -18,5 +18,10 @@ namespace HomeWorckPaymentGateway
             _exchangeRate = exchangeRate;
             _networkFee = networkFee;
         }
+
+        public bool CheckExchangeRate()
+        {
+            return _exchangeRate > 0;
+        }
     }
 }
