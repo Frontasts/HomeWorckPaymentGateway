@@ -21,5 +21,7 @@ namespace HomeWorckPaymentGateway
         {
             return amount + (amount * _feePercent / 100m);
         }
+
+        public abstract bool ProcessPayment(decimal amount, string accountId);
     }
 }
