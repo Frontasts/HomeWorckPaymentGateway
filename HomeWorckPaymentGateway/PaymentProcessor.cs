@@ -16,5 +16,10 @@ namespace HomeWorckPaymentGateway
             _processorName = name;
             _feePercent = feePercent;
         }
+
+        public decimal CalculateTotal(decimal amount)
+        {
+            return amount + (amount * _feePercent / 100m);
+        }
     }
 }
