@@ -23,5 +23,14 @@ namespace HomeWorckPaymentGateway
         }
 
         public abstract bool ProcessPayment(decimal amount, string accountId, out string log);
+
+        public string GetProcessorName()
+        {
+            return _processorName;
+        }
+        public decimal GetFeePercent()
+        {
+            return _feePercent;
+        }
     }
 }
