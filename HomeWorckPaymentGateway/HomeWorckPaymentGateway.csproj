@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CreditCardProcessor.cs" />
+    <Compile Include="CryptoProcessor.cs" />
     <Compile Include="PaymentProcessor.cs" />
     <Compile Include="PayPalProcessor.cs" />
     <Compile Include="Program.cs" />
